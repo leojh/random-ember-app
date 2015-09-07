@@ -1,0 +1,13 @@
+<h2 id="title">Contacts at Third Wave</h2>
+
+<ul>
+  {{#each contacts as |contact|}}
+    <li>
+      {{#link-to 'contact' contact}}
+            {{contact.name}}
+      {{/link-to}}
+    </li>
+  {{/each}}
+</ul>
+
+{{outlet}}

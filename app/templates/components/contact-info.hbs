@@ -1,0 +1,13 @@
+{{#with contact}}
+<div>
+  <h3>{{name}}</h3>
+  <ul>
+    {{#if twitter}}
+      <li>Twitter: {{twitter}}</li>
+    {{/if}}
+    {{#if github}}
+      <li>GitHub: {{github}}</li>
+    {{/if}}
+  </ul>
+</div>
+{{/with}}
